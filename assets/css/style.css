@@ -1,0 +1,155 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url("../fonts/montserrat/montserrat-light-webfont.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url("../fonts/oswald/oswald-regular-webfont.woff2") format("woff2");
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #191919;
+    color: #f1f1f1;
+    font-family: 'Montserrat', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-size: cover;
+    background-image: url("../img/Quand-mobilier-bureau-devient-flexible-connecte-F.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    background-blend-mode: initial
+}
+
+form{
+    margin: 100px;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    border-radius: 30px;
+    
+     
+}
+input,label{
+    border: transparent;
+    border-radius: 0px;
+    
+}
+input{
+    margin-bottom: 10%;
+    border: transparent;
+    padding: 10px 10px ;
+    border-radius: 10px;
+}
+.button{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;    
+    
+}
+
+
+.sep{
+    margin-right: 10%;
+    
+}
+#checkbox{
+    display: flex;
+    align-items: left ;
+    width: 100%;
+}
+button{
+    border-radius: 30px;
+    border: transparent;
+    padding: 7px;
+    border-radius: 10px;
+    margin: 10px;
+    align-items: center;
+    
+}
+#btns:hover{
+    color: aqua;
+    
+
+}
+.button2:hover{
+    color: aqua;
+    
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+h1{
+    color: aqua;
+    margin-bottom: -100%;
+}
+.animation{
+    animation:flipInY linear 1s;
+}
+
+@-webkit-keyframes flipInY {
+    from {
+      -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+      transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+      -webkit-animation-timing-function: ease-in;
+      animation-timing-function: ease-in;
+      opacity: 0;
+    }
+  
+    40% {
+      -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
+      transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
+      -webkit-animation-timing-function: ease-in;
+      animation-timing-function: ease-in;
+    }
+  
+    60% {
+      -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+      transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+      opacity: 1;
+    }
+  
+    80% {
+      -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+      transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+    }
+  
+    to {
+      -webkit-transform: perspective(400px);
+      transform: perspective(400px);
+    }
+  }
+  .accueil{
+    
+  }
+  header{
+      width: 100%;
+      padding: 20px;
+      background-color: black;
+      position: fixed;
+      top: 0;
+      left: 0;
+  }
+  .sep2{
+      display: flex;
+      
+  }
+  .st0{
+      fill:#fff;
+      stroke:#fff;
+      stroke-miterlimit:10;
+    }
