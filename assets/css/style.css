@@ -147,9 +147,11 @@ h1{
   .sep2{
       display: flex;
       
-  }
-  .st0{
-      fill:#fff;
-      stroke:#fff;
-      stroke-miterlimit:10;
-    }
+  }  
+.st0 {
+fill: #FFFFFF;
+
+}  
+#calque_1{
+    padding: 30px;
+}

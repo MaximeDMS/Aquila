@@ -10,3 +10,4 @@ Relance VS CODE
 ctrl + shift + P -> git clone https://github.com/MecChaud/Aquila.git
 
 Installer l'application grace à : npm run install
+Lance l'application grace à : npm run start
