@@ -17,3 +17,10 @@ et écrire dans le terminal une des 2 commandes :
 
 utilisé l'adresse local ainsi que le port 5000 t'elle que définie dans app.js
 (rappel adresse local : localhost ou 127.0.0.1)
+
+travailler avec git : 
+4 Concepte :
+- initialisation du repertoir au travers le serveur de version de fichier (Github)
+- Clone le repertoir à partir du serveur de version (Clonne une adresse .git)
+- Tirer une mise à jours du serveur de version (Pull)
+- Pousser une mise à jours sur le serveur de version (Validation -> Commits -> Push)
