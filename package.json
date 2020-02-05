@@ -1,0 +1,25 @@
+{
+  "name": "aquila",
+  "version": "1.0.0",
+  "description": "Le site web de la Team E-Sport Aquila",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "install": "npm update",
+    "start": "node ./app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MecChaud/Aquila.git"
+  },
+  "author": "Audric,Owenn,Axel,Maxime",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MecChaud/Aquila/issues"
+  },
+  "homepage": "https://github.com/MecChaud/Aquila#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "serve-static": "^1.14.1"
+  }
+}
