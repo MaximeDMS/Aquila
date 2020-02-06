@@ -1,4 +1,4 @@
-const form = document.querySelector("form");
+const form = document.getElementById("login");
 
 form.addEventListener("submit", function (e) {
     var mail = form.elements.mail.value;
@@ -6,8 +6,9 @@ form.addEventListener("submit", function (e) {
 
     if (mail == "max@max.fr" && mdp == "max") {
         console.log("ok");
-    }else {
+    } else {
         console.log("bad credential");
         e.preventDefault(); // Annulation de l'envoi des données
     }
+
 });

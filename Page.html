@@ -20,32 +20,37 @@
         <nav class="sep2">
             <span class="accueil">Accueil</span>
             <div>
-                <svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 595.3 841.9"
-                    style="enable-background:new 0 0 595.3 841.9;" xml:space="preserve">
-                    <style type="text/css">
-                        .st0 {
-                            fill: #FFFFFF;
-                            stroke: #1D1D1B;
-                            stroke-miterlimit: 10;
-                        }
-                    </style>
-                    <path class="st0" d="M358.9,384H79.1c-8,0-14.6-6.6-14.6-14.6l0,0c0-8,6.6-14.6,14.6-14.6h279.8c8,0,14.6,6.6,14.6,14.6l0,0
-	C373.5,377.4,366.9,384,358.9,384z" />
-                    <path class="st0" d="M358.9,527.1H79.1c-8,0-14.6-6.6-14.6-14.6l0,0c0-8,6.6-14.6,14.6-14.6h279.8c8,0,14.6,6.6,14.6,14.6l0,0
-	C373.5,520.5,366.9,527.1,358.9,527.1z" />
-                    <path class="st0" d="M358.9,455.5H79.1c-8,0-14.6-6.6-14.6-14.6l0,0c0-8,6.6-14.6,14.6-14.6h279.8c8,0,14.6,6.6,14.6,14.6l0,0
-	C373.5,449,366.9,455.5,358.9,455.5z" />
-            </svg>
+
             </div>
 
         </nav>
     </header>
     <main>
         <div>
-
+            <form id="write">
+                <input required type="pseudo" name="pseudo" value="" placeholder="Pseudo">
+                <textarea name="text" value="" placeholder="Saisir voutre texte"></textarea>
+                <div>
+                    <button type="submit">Valider</button>
+                </div>
+            </form>
         </div>
+        <div id="message"></div>
     </main>
+    <script>
+        const form = document.getElementById("write");
+        const message = document.getElementById("message");
+ 
+
+        form.addEventListener("submit", function (e) {
+            var pseudo = form.elements.pseudo.value;
+            var text = form.elements.text.value;
+
+            message.innerHTML = "<p>" + pseudo +"</p></br><p>"+ text + "</p>";
+
+            e.preventDefault();
+        });
+    </script>
 </body>
 
 </html>
