@@ -18,6 +18,8 @@ app.get('/', function(req, res) {
 });
 
 
+
+
 async function sendMailNewAccount() {
   // Generate test SMTP service account from ethereal.email
   // Only needed if you don't have a real mail account for testing
