@@ -46,18 +46,25 @@ async function sendMailNewAccount(data) {
 		from: 'Aquila.Esport1@gmail.com', // sender address
 		to: 'Aquila.Esport1@gmail.com', // list of receivers
 		subject: 'Recrutement', // Subject line
-		html: `<p>
-		Salut l'Equipe
+		attachments: [{
+			filename: 'logomail.png',
+			path: __dirname + '/assets/img/logomail.png',
+			cid: 'unique@logomail' //my mistake was putting "cid:logo@cid" here! 
+	   }],
+		html: 
+		`<div><img style="width:250px;" src="cid:unique@logomail" />
+		<p> Salut l'Equipe
 		<br>Une nouvelle demande de reccrutement est arrivé! 
 		<br>Formulaire
-		<br>Prénom:  <b>
-		<br>Nom:
+		<br>Prénom: <b>` + data.c_prénom + `</b>
+		<br>Nom: <b>` + data.c_name + `</b>
 		<br>Pseudo: <b>` + data.c_pseudo + `</b>
 		<br>Adresse mail: <b>` + data.c_email + `</b> 
 		<br><b>téléphone: <b>` + data.c_phone + `</b> 
 		<br>Date de naissance: <b>` + data.c_ddn + `</b>
 		<br>Message: <b>` + data.c_message + `</b>
-   </p>`// plain text body
+   </p></div>`// plain text body
+   
 	};
 
 	transporter.sendMail(mailOptions, function (err, info) {
