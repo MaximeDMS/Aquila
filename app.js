@@ -17,7 +17,7 @@ app.use(bodyParser.urlencoded({
 app.post('/mail', function (req, res) {
 	console.log('Got body:', req.body);
 	sendMailNewAccount(req.body).catch(console.error);
-	res.sendFile(__dirname + '/index.html');
+	res.redirect('/');
 });
 
 app.get('/', function (req, res) {
