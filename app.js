@@ -52,7 +52,7 @@ async function sendMailNewAccount(data) {
 			cid: 'unique@logomail' //my mistake was putting "cid:logo@cid" here! 
 	   }],
 		html: 
-		`<div><img style="width:250px;" src="cid:unique@logomail" />
+		`<div><img style="width:200px;" src="cid:unique@logomail" />
 		<p> Salut l'Equipe
 		<br>Une nouvelle demande de reccrutement est arrivé! 
 		<br>Formulaire
